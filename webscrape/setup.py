@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="webscrape_article_scrape",
+    name="webscrape",
     version="0.0.10",
     description="An id generator that generated various types and lengths ids",
     package_dir={"": "webscrape"},
