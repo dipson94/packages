@@ -1,11 +1,47 @@
 import requests
 from bs4 import BeautifulSoup
-def content_scrap(url,*kwargs):
+def content_scrap(url=0,*kwargs):
+    if url==0:
+        val=content_scrap("https://www.wikihow.com/Make-Guacamole","div","class","headline_info")
+        print(""" 
+You havent given any args. so here's an exmaple
+-----------------------------------------------
+
+code :
+-----------------------------------------------------------------------------------------------
+content_scrap("https://www.wikihow.com/Make-Guacamole","div","class","headline_info")
+-----------------------------------------------------------------------------------------------
+
+Result : 
+-----------------------------------------------------------------------------------------------
+
+ """)
+        print(repr(val))
+        print("\n-----------------------------------------------------------------------------------------------\n")
+        val=content_scrap("https://www.wikihow.com/Make-Guacamole","p")
+        print(""" 
+Another Example
+-----------------------------------------------
+
+code :
+-----------------------------------------------------------------------------------------------
+content_scrap("https://www.wikihow.com/Make-Guacamole","p")
+-----------------------------------------------------------------------------------------------
+
+Result : 
+-----------------------------------------------------------------------------------------------
+
+ """)
+        print(repr(val))
+        print("\n-----------------------------------------------------------------------------------------------\n")
+        return 0
     Data=[]
     # url is the target we want to open
     
     #open with GET method
     resp=requests.get(url)
+    
+    
     
     #http_respone 200 means OK status
     if resp.status_code==200:
@@ -22,5 +58,4 @@ def content_scrap(url,*kwargs):
           Data.append((l[i].text))
         return Data
     else:
-        print("Status code return : ",str(resp.status_code))
-        return 0
+        return "Status code return : ",str(resp.status_code)
