@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/install_from_git.egg-info/PKG-INFO
+src/install_from_git.egg-info/SOURCES.txt
+src/install_from_git.egg-info/dependency_links.txt
+src/install_from_git.egg-info/requires.txt
+src/install_from_git.egg-info/top_level.txt

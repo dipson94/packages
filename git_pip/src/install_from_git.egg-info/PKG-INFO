@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: install-from-git
+Version: 0.0.10
+Summary: pip code to install package from github
+Author: Dipson
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+

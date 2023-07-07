@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/pipfromgit.egg-info/PKG-INFO
+src/pipfromgit.egg-info/SOURCES.txt
+src/pipfromgit.egg-info/dependency_links.txt
+src/pipfromgit.egg-info/requires.txt
+src/pipfromgit.egg-info/top_level.txt
