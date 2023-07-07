@@ -19,6 +19,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     install_requires=['bs4','requests'],
-    },
     python_requires=">=3.10",
 )
